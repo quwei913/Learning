@@ -1,0 +1,31 @@
+<body>
+<!-- directly use -->
+<div contenteditable="true" style="width:500px;border:1px solid black">
+    Family
+    <!-- if parent is editable, this table is editable as well -->
+    <table style="width:420px;border-collapse:collapse" border="1">
+        <tr>
+            <td>family</td>
+            <td>FAMILY</td>
+        </tr>
+        <tr>
+            <td>Wei</td>
+            <td>Qu</td>
+        </tr>
+    </table>
+</div>
+<hr/>
+<!-- this is not editable by default and changed to editable after double click -->
+<table id="target"
+       ondblclick="this.contentEditable=true;"
+       style="width:420px;border-collapse:collapse" border="1">
+    <tr>
+        <td>java</td>
+        <td>ruby</td>
+    </tr>
+    <tr>
+        <td>c/c++</td>
+        <td>python</td>
+    </tr>
+</table>
+</body>

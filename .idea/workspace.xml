@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5405bc52-93d3-47d0-bdaf-a8b5fe9ebea1" name="Default" comment="restructure">
+    <list default="true" id="5405bc52-93d3-47d0-bdaf-a8b5fe9ebea1" name="Default" comment="chapter 2">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/iframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/img.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/simpleTable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/syntax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/tablespan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/tablewithbody.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/tablewithcol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.2/contentEditable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.2/designMode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.2/hidden.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.2/spellcheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.3/article.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.3/aside.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.3/details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.3/figure.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.3/meter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.3/semantic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.4/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-css-javascript/2.4/meta.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html-css-javascript/1.3/a.GIF" afterPath="$PROJECT_DIR$/html-css-javascript/1.3/a.GIF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.1/bad.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.1/bad.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.1/qs.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.1/qs.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.2/autofocus.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.2/autofocus.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.2/focus.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.2/focus.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.3/a.GIF" afterPath="$PROJECT_DIR$/html-css-javascript/1.3/a.GIF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.3/missTag.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.3/missTag.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.3/noCase.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.3/noCase.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/01/1.3/noQuote.html" afterPath="$PROJECT_DIR$/html-css-javascript/1.3/noQuote.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/02/2.1/anchor.html" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/anchor.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/02/2.1/basic.html" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/basic.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html-css-javascript/02/2.1/text.html" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/text.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html-css-javascript/2.1/anchor.html" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/anchor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html-css-javascript/2.1/text.html" afterPath="$PROJECT_DIR$/html-css-javascript/2.1/text.html" />
     </list>
     <ignored path="Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,51 +47,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="text.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/text.html">
+      <file leaf-file-name="figure.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/figure.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="162">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#figure#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="semantic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/semantic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anchor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/anchor.html">
+      <file leaf-file-name="details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/details.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
-              <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bad.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html-css-javascript/1.1/bad.html">
+      <file leaf-file-name="meter.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/meter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="81">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="focus.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html-css-javascript/1.2/focus.html">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.4/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.4/meta.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hidden.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.2/hidden.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spellcheck.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.2/spellcheck.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
-              <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noCase.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html-css-javascript/1.3/noCase.html">
+      <file leaf-file-name="tablewithbody.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/tablewithbody.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="54">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tablewithcol.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/tablewithcol.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -110,12 +176,35 @@
         <option value="$PROJECT_DIR$/html-css-javascript/02/2.1/anchor.html" />
         <option value="$PROJECT_DIR$/html-css-javascript/1.2/focus.html" />
         <option value="$PROJECT_DIR$/html-css-javascript/1.3/noCase.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/syntax.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/anchor.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/text.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/list.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/img.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/simpleTable.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/tablespan.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/tablewithbody.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/tablewithcol.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.1/iframe.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.2/contentEditable.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.2/designMode.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.2/spellcheck.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.3/article.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.3/aside.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.3/figure.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.3/semantic.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.3/details.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.3/meter.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/base.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.4/base.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.4/meta.html" />
+        <option value="$PROJECT_DIR$/html-css-javascript/2.2/hidden.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
-    <option name="height" value="1046" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -175,22 +264,8 @@
               <option name="myItemId" value="html-css-javascript" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html-css-javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1.2" />
+              <option name="myItemId" value="2.4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -205,10 +280,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html-css-javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -239,6 +310,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_repository\Learning\html-css-javascript\2.4" />
       <recent name="D:\git_repository\Learning\html-css-javascript" />
     </key>
   </component>
@@ -499,16 +571,23 @@
       <option name="project" value="LOCAL" />
       <updated>1464595153789</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="restructure">
+      <created>1464614147436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464614147436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1046" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1024" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33757225" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -546,7 +625,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="restructure" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructure" />
+    <MESSAGE value="chapter 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="chapter 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -585,38 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/anchor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html-css-javascript/1.1/bad.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html-css-javascript/1.2/focus.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -629,6 +677,212 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/1.1/bad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/syntax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/img.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/simpleTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/tablespan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.2/contentEditable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/anchor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.2/designMode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="29" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/aside.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/figure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#figure#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/semantic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.3/meter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.4/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.4/meta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.2/hidden.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.2/spellcheck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/tablewithbody.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html-css-javascript/2.1/tablewithcol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
