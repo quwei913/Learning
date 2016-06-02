@@ -1,0 +1,24 @@
+<body>
+browse pic: <input id="images" type="file" multiple accept="image/*"/>
+<input type="button" value="display files" onclick="showDetails();"/>
+<script type="text/javascript">
+    var showDetails = function()
+    {
+        var imageEle = document.getElementById("images");
+        // acquire files
+        var fileList = imageEle.files;
+        // iterate files
+        for (var i = 0; i < fileList.length; i++)
+        {
+            var file = fileList[i];
+            div = document.createElement("div");
+            // read in attributions
+            div.innerHTML = "File " + (i + 1) + " name: " + file.name
+            + ", type: " + file.type
+            + ", size: " + file.size;
+            // add div
+            document.body.appendChild(div);
+        }
+    }
+</script>
+</body>

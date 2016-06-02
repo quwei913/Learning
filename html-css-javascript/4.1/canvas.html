@@ -1,0 +1,15 @@
+<body>
+<h2>drawing</h2>
+<canvas id="mc" width="300" height="180"
+        style="border:1px solid black"></canvas>
+<script type="text/javascript">
+    //acquire DOM object
+    var canvas = document.getElementById('mc');
+    //acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    //fill color
+    ctx.fillStyle = '#f00';
+    //draw rectangle
+    ctx.fillRect(30,40,80,100);
+</script>
+</body>

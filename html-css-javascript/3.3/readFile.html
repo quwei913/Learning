@@ -1,0 +1,58 @@
+<body>
+browse files: <input id="file1" type="file"/><br/>
+<div id="result"></div>
+<input type="button" value="text" onclick="readText();"/><br/>
+<input type="button" value="binary" onclick="readBinary();"/><br/>
+<input type="button" value="URL" onclick="readURL();"/><br/>
+<script type="text/javascript">
+    var reader = null;
+    // if support FileReader
+    if(FileReader)
+    {
+        reader = new FileReader();
+    }
+    // if not
+    else
+    {
+        alert("FileReader is not supported");
+    }
+    var readText = function()
+    {
+        // check if it is a text file
+        // if the first file is a text file
+        if(/text\/\w+/.test(document.getElementById("file1").files[0].type))
+        {
+            // read in first file as text
+            reader.readAsText(document.getElementById("file1").files[0], "gbk");
+            // trigger after load
+            reader.onload = function()
+            {
+                document.getElementById("result").innerHTML = reader.result;
+            };
+        }
+        else
+        {
+            alert("Not a text file!");
+        }
+    }
+    var readBinary = function()
+    {
+        // read in first file as text
+        reader.readAsBinaryString(document.getElementById("file1").files[0]);
+        reader.onload = function()
+        {
+            document.getElementById("result").innerHTML = reader.result;
+        };
+    }
+    var readURL = function()
+    {
+        // read in first file as DataURL
+        reader.readAsDataURL(document.getElementById("file1").file[0]);
+        // trigger when loaded
+        reader.onload = function()
+        {
+            document.getElementById("result").innerHTML = reader.result;
+        }
+    }
+</script>
+</body>

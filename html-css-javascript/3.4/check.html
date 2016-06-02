@@ -1,0 +1,30 @@
+<body>
+<form action="add">
+    birthday: <input id="birth" name="birth" type="date"/><br/>
+    address: <input id="email" name="email" type="email"/><br/>
+    <input type="submit" value="submit" onclick="return check();" />
+</form>
+<script type="text/javascript">
+    var check = function()
+    {
+        return commonCheck("birth", "birthday", "Should be valid date!")
+            && commonCheck("email", "address", "Should be valid email address!");
+    }
+    var commonCheck = function(field, fieldName, tip)
+    {
+        var targetEle = document.getElementById(field);
+        if (targetEle.value.trim() == "")
+        {
+            alert(fieldName + " should be filled!");
+            return false;
+        }
+        // invoke checkValidity to check
+        else if(!targetEle.checkValidity())
+        {
+            alert(fieldName + tip);
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>

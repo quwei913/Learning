@@ -1,0 +1,31 @@
+<body>
+browse file: <input id="file1" type="file"/><br/>
+progress: <progress id="pro" value="0"></progress>
+<div id="result"></div>
+<input type="button" value="read in binary" onclick="readBinary();"/><br/>
+<script type="text/javascript">
+    var reader = null;
+    // if FileReader is supported
+    if(FileReader)
+    {
+        reader = new FileReader();
+    }
+    // if not supported
+    else
+    {
+        alert("FileReader is not supported!");
+    }
+    var readBinary = function()
+    {
+        // read in first file as binary
+        reader.readAsBinaryString(document.getElementById("file1").files[0]);
+        var pro = document.getElementById("pro");
+        pro.max = document.getElementById("file1").files[0].size;
+        // trigger during reading
+        reader.onprogress = function(evt)
+        {
+            pro.value = evt.loaded;
+        };
+    }
+</script>
+</body>

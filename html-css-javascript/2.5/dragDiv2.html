@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>Draggable div</title>
+</head>
+<body>
+<div id="source" style="width:80px;height:80px;
+     border:1px solid black;
+     background-color: #bbb;"
+     draggable="true">gg</div>
+<script type="text/javascript">
+    var source = document.getElementById("source");
+    source.ondragstart = function(evt)
+    {
+        //drag data
+        evt.dataTransfer.setData("text/plain", "www.google.com");
+    }
+    document.ondragover = function(evt)
+    {
+        // cancel default behavior
+        return false;
+    }
+</script>
+</body>
+</html>

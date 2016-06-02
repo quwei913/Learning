@@ -1,0 +1,28 @@
+<form action="http://www.google.com" method="post">
+    drop down list: <br />
+    <select id="skills" name="skills">
+        <option value="java">Java</option>
+        <option value="c">C</option>
+        <option value="ruby">Ruby</option>
+    </select><br /><br /><br />
+    multi-choice: <br />
+    <select id="books" name="books" multiple="multiple" size="4">
+        <option value="java">java doc</option>
+        <option value="android">android doc</option>
+        <option value="ee">EE</option>
+    </select><br />
+    multi-choice list: <br />
+    <select id="leegang" name="leegang"
+            multiple="multiple" size="6">
+        <optgroup label="java doc">
+            <option value="java" label="aaaaa">java doc</option>
+            <option value="android">android doc</option>
+            <option value="ee">EE</option>
+        </optgroup>
+        <optgroup label="others">
+            <option value="struts">Struts</option>
+            <option value="ror">RoR</option>
+        </optgroup>
+    </select><br />
+    <button type="submit"><b>submit</b></button>
+</form>

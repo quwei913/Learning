@@ -1,0 +1,35 @@
+<h2>rectangle</h2>
+<canvas id="mc" width="400" height="280"
+        style="border:1px solid black"></canvas>
+<script type="text/javascript">
+    //acquire canvas DOM object
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    // set color fill
+    ctx.fillStyle = '#f00';
+    // fill rectangle
+    ctx.fillRect(30, 20, 120, 60);
+    // set color fill
+    ctx.fillStyle = '#ff0';
+    // fill rectangle
+    ctx.fillRect(80, 60, 120, 60);
+    // set line color
+    ctx.strokeStyle = "#00f";
+    // set line width
+    ctx.lineWidth = 10;
+    // draw stroke
+    ctx.strokeRect(30, 130, 120, 60);
+    // set line color
+    ctx.strokeStyle = "#0ff";
+    // set line width
+    ctx.lineJoin = "round";
+    // draw stroke
+    ctx.strokeRect(80, 160, 120, 60);
+    // stroke color
+    ctx.strokeStyle = "#f0f";
+    // set line width
+    ctx.lineJoin = "bevel";
+    // draw stroke
+    ctx.strokeRect(130, 190, 120, 60);
+</script>

@@ -1,0 +1,25 @@
+<body>
+<form action="add">
+    name: <input id="name" name="name" type="text" required/><br/>
+    id: <input id="id" name="id" type="text" required pattern="\d{3}-\d-\d{3}-\d{5}"/><br/>
+    age: <input id="age" name="age" type="number" min="20" max="150" step="5"/><br/>
+    <input type="submit" value="submit" onclick="check();"/>
+</form>
+<script type="text/javascript">
+    var check = function()
+    {
+        if(!document.getElementById("name").checkValidity())
+        {
+            document.getElementById("name").setCustomValidity("name is mandatory!");
+        }
+        if(!document.getElementById("id").checkValidity())
+        {
+            document.getElementById("id").setCustomValidity("id is mandatory!" + "\nIt must comply xxx-x-xxx-xxxxx format");
+        }
+        if(!document.getElementById("age").checkValidity())
+        {
+            document.getElementById("age").setCustomValidity("age is mandatory!" + "\nIt must be between 20-150");
+        }
+    };
+</script>
+</body>
