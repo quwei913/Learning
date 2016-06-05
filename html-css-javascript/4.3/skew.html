@@ -1,0 +1,28 @@
+<h2>transform</h2>
+<canvas id="mc" width="600" height="360"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    function skew(context, angle)
+    {
+        // use transform() to skew
+        context.transform(1, 0, -Math.tan(angle), 1, 0, 0);
+    }
+    // acquire DOM object
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = "rgba(255, 0, 0, 0.3)";
+    //draw
+    ctx.translate(360, 5);
+    for(var i = 0; i < 30; i++)
+    {
+        // move
+        ctx.translate(50, 30);
+        // zoom
+        ctx.scale(0.93, 0.93);
+        // skew
+        skew(ctx, Math.PI / 10);
+        ctx.fillRect(0, 0, 150, 75);
+    }
+</script>

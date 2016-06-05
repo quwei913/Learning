@@ -1,0 +1,32 @@
+<h2>clip image</h2>
+<canvas id="mc" width="400" height="260"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    var dig = Math.PI / 20;
+    var count = 0;
+    // create image object
+    var image = new Image();
+    // specify image
+    image.src = '../1.3/a.gif';
+    // trigger when load
+    image.onload = function()
+    {
+        // trigger addRadial every 150 seconds
+        setInterval("addRadial();", 150);
+    }
+    var addRadial = function()
+    {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(200, 130, 200, 0, dig * ++count, false);
+        ctx.lineTo(200, 130);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(image, 124, 20);
+        ctx.restore();
+    }
+</script>

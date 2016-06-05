@@ -1,0 +1,28 @@
+<h2>shadow</h2>
+<canvas id="mc" width="600" height="280"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    //acquire canvas dom object
+    var canvas = document.getElementById('mc');
+    //acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    //set blur
+    ctx.shadowBlue = 5.6;
+    // set color
+    ctx.shadowColor = "#222";
+    // offset
+    ctx.shadowOffsetX = 10;
+    ctx.shadowOffsetY = -6;
+    ctx.fillStyle = '#00f';
+    ctx.font = 'italic 50px';
+    ctx.textBaseline = 'top';
+    //string
+    ctx.fillText('Familty', 0, 0);
+    ctx.strokeText('ee', 0, 50);
+    // rectangle
+    ctx.fillRect(20, 150, 180, 80);
+    ctx.lineWidth = 8;
+    // rectangle stroke
+    ctx.strokeRect(300, 150, 180, 80);
+</script>

@@ -1,0 +1,25 @@
+<h2>draw image</h2>
+<canvas id="mc" width="420" height="280"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    // create image object
+    var image = new Image();
+    // specify image
+    image.src = '../1.3/a.gif';
+    // trigger when load
+    image.onload = function()
+    {
+        // stay same
+        ctx.drawImage(image, 20, 10);
+        // zoom
+        ctx.drawImage(image, 180, 10, 76, 110);
+        var sd = 50;
+        var sh = 65;
+        // 3x enlarged
+        ctx.drawImage(image, 2, 50, sd, sh, 265, 10, sd * 3, sh * 3);
+    }
+</script>

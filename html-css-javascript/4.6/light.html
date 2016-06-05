@@ -1,0 +1,34 @@
+<h2>light</h2>
+<canvas id="mc" width="400" height="260"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    // create image object
+    var image = new Image();
+    // specify image
+    image.src = '../1.3/a.gif';
+    // trigger when load
+    image.onload = function()
+    {
+        ctx.drawImage(image, 30, 20);
+        lightImage(image, 220, 20, 1.6);
+    }
+    var lightImage = function(image, x, y, light)
+    {
+        ctx.drawImage(image, x, y);
+        //acquire image from x,y and image.width wide image.height high
+        var imgData = ctx.getImageData(x, y, image.width, image.height);
+        for ( var i = 0, len = imgData.data.length; i < len; i += 4)
+        {
+            // change R, G, B
+            imgData.data[i + 0] = imgData.data[i + 0] * light;
+            imgData.data[i + 1] = imgData.data[i + 1] * light;
+            imgData.data[i + 2] = imgData.data[i + 2] * light;
+        }
+        // put back
+        ctx.putImageData(imgData, x, y);
+    }
+</script>

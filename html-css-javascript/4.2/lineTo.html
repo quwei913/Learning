@@ -1,0 +1,47 @@
+<h2>lineTo sample</h2>
+<canvas id="mc" width="400" height="380"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    /*
+    mult-angle star
+    n: n angles
+    dx, dy: location
+    size: N-angle star size
+    */
+    function createStar(context, n, dx, dy, size)
+    {
+        // start path
+        context.beginPath();
+        var dig = Math.PI / n * 4;
+        for(var i = 0; i < n; i++)
+        {
+            var x = Math.sin(i * dig);
+            var y = Math.cos(i * dig);
+            // draw line
+            context.lineTo(x * size + dx, y * size + dy);
+        }
+        // close path
+        context.closePath();
+     }
+    //acquire canvas DOM
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    // 3 angle star
+    createStar(ctx, 5, 160, 60, 50);
+    ctx.fillStyle = "#f00";
+    ctx.fill();
+    // 5 angle star
+    createStar(ctx, 5, 160, 60, 50);
+    ctx.fillStyle = "#0f0";
+    ctx.fill();
+    // 7 angle star
+    createStar(ctx, 7, 260, 60, 50);
+    ctx.fillStyle = "#00f";
+    ctx.fill();
+    // 9 angle star
+    createStar(ctx, 9, 360, 60, 50);
+    ctx.fillStyle = "#f0f";
+    ctx.fill();
+</script>

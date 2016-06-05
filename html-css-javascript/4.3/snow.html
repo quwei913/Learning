@@ -1,0 +1,24 @@
+<h2>snow</h2>
+<canvas id="mc" width="420" height="280"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    function createFlower(context, n, dx, dy, size, length)
+    {
+        // be
+    }
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = "rgba(255, 0, 0, 0.3)";
+    ctx.fillStyle = "rgba(255, 0, 0, 0.3)";
+    // draw
+    ctx.translate(30, 200);
+    for(var i = 0; i < 50; i++)
+    {
+        ctx.translate(50, 50);
+        ctx.scale(0.93, 0.93);
+        ctx.rotate(-Math.PI / 10);
+        ctx.fillRect(0, 0, 150, 75);
+    }
+</script>

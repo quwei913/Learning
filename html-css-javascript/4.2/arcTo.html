@@ -1,0 +1,41 @@
+<h2>arcTo sample</h2>
+<canvas id="mc" width="400" height="280"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    /*
+    rectangle with arc angle
+    x1, y1: location of up-left angle
+    width, height: rectangle's size
+    radius: radius of arc at the 4 angles
+    */
+    function createRoundRect(context, x1, y1, width, height, radius)
+    {
+        // up-left angle
+        ctx.moveTo(x1 + radius, y1);
+        // connect to up-right
+        ctx.lineTo(x1 + width - radius, y1);
+        // add an arc
+        ctx.arcTo(x1 + width, y1, x1 + width, y1 + radius, radius);
+        // add line to down-right
+        ctx.lineTo(x1 + width, y1 + height - radius);
+        // add an arc
+        ctx.arcTo(x1 + width, y1 + height, x1 + width - radius, y1 + height, radius);
+        // add line to down-left
+        ctx.lineTo(x1 + radius, y1 + height);
+        // add an arc
+        ctx.arcTo(x1, y1 + height, x1, y1 + height - radius, radius);
+        // add a line to up left
+        ctx.lineTo(x1, y1 + radius);
+        // add an arc
+        ctx.arcTo(x1, y1, x1 + radius, y1, radius);
+        ctx.closePath();
+    }
+    //acquire canvas DOM
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    ctx.lineWidth = 3;
+    createRoundRect(ctx, 30, 30, 200, 100, 20);
+    ctx.stroke();
+</script>

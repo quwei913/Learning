@@ -1,0 +1,22 @@
+<h2>draw circle</h2>
+<canvas id="mc" width="400" height="280"
+        style="border:1px solid black"></canvas>
+<script type="text/javascript">
+    //acquire DOM object
+    var canvas = document.getElementById('mc');
+    //acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    for(var i = 0; i < 10; i++)
+    {
+        //path
+        ctx.beginPath();
+        // add arc
+        ctx.arc(i * 25, i * 25, (i + 1) * 8, 0, Math.PI * 2, true);
+        //close path
+        ctx.closePath();
+        //set fill color
+        ctx.fillStyle = 'rgba(255, 0, 255, ' + (10 - i) * 0.1 + ')';
+        // fill path
+        ctx.fill();
+    }
+</script>

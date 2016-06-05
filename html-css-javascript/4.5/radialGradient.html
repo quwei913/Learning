@@ -1,0 +1,39 @@
+<h2>radial gradient</h2>
+<canvas id="mc" width="400" height="280"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    ctx.save();
+    ctx.translate(30, 20);
+    // create line gradient
+    lg = ctx.createRadialGradient(80, 40, 5, 80, 40, 60);
+    // add color
+    lg.addColorStop(0.2, "#f00");
+    lg.addColorStop(0.5, "#0f0");
+    lg.addColorStop(0.9, "#00f");
+    // fill color
+    ctx.fillStyle = lg;
+    // fill rect
+    ctx.fillRect(0, 0, 160, 80);
+    // restore
+    ctx.restore();
+    // translate
+    ctx.translate(280, 160);
+    ctx.beginPath();
+    // add arc
+    ctx.arc(0, 0, 80, 0, Math.PI * 2, true);
+    ctx.closePath();
+    ctx.lineWidth = 12;
+    // another linear gradient
+    lg2 = ctx.createRadialGradient(0, 0, 5, 0, 0, 80);
+    // add color
+    lg2.addColorStop(0.1, "#ff0");
+    lg2.addColorStop(0.4, "#0ff");
+    lg2.addColorStop(0.8, "#f0f");
+    // add color to stroke
+    ctx.strokeStyle = lg2;
+    ctx.fill();
+</script>

@@ -1,0 +1,17 @@
+<h2>draw text</h2>
+<canvas id="mc" width="600" height="280" style="border:1px solid black"></canvas>
+<script type="text/javascript">
+    //acquire canvas dom object
+    var canvas = document.getElementById('mc');
+    //acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#00f';
+    ctx.font = 'italic 50px';
+    ctx.textBaseline = 'top';
+    //string
+    ctx.fillText('Family', 0, 0);
+    ctx.strokeStyle = '#f0f';
+    ctx.font = 'bold 45px';
+    //string stroke
+    ctx.strokeText('ee', 0, 50);
+</script>

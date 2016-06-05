@@ -1,0 +1,32 @@
+<h2>fill image</h2>
+<canvas id="mc" width="400" height="280"
+        style="border:1px solid black">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById('mc');
+    // acquire CanvasRenderingContext2D object
+    var ctx = canvas.getContext('2d');
+    ctx.save();
+    ctx.translate(30, 20);
+    // create image object
+    var image = new Image();
+    // specify image
+    image.src = '../1.3/a.gif';
+    // trigger when load
+    image.onload = function()
+    {
+        // create pattern
+        imgPattern = ctx.createPattern(image, "repeat");
+        // fill
+        ctx.fillStyle = imgPattern;
+        ctx.fillRect(0, 0, 160, 80);
+        ctx.restore();
+        ctx.translate(280, 160);
+        ctx.beginPath();
+        ctx.arc(0, 0, 80, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.lineWidth = 12;
+        ctx.strokeStyle = imgPattern;
+        ctx.stroke();
+    }
+</script>
