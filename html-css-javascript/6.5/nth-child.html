@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>:nth-child</title>
+    <style type="text/css">
+        li:nth-child(odd){
+            margin: 10px;
+            border: 2px dotted black;
+        }
+        li:nth-last-child(even){
+            padding: 4px;
+            border: 1px solid black;
+        }
+        /* define style for unique child */
+        span:only-child{
+            font-size: 30pt;
+            font-family: "arial";
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li id="father">Wei Qu</li>
+    <li id="mother">Na He</li>
+    <li id="son">Austin Qu</li>
+    <li id="name">Member</li>
+    <li id="lastname">Frank</li>
+</ul>
+</body>
+</html>

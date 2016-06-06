@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>new document</title>
+    <style type="text/css">
+        /*define open-quote as << and close-quote as >>*/
+        div>div{
+            quotes: "<<" ">>";
+        }
+        /*insert open-quote before div's child div*/
+        div>div:before{
+            content: open-quote;
+        }
+        /*insert close-quote aafter div's child div*/
+        div>div:after{
+            content: close-quote;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>Wei Qu</div>
+    <div>Na He</div>
+    <div>Austin Qu</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>first letter</title>
+    <style type="text/css">
+        span {
+            display:block;
+        }
+        /*change color of first letter in span. set display to block since span is inline element*/
+        span:first-letter{
+            color: #f00;
+            font-size:20pt;
+        }
+        /* set first letter of section */
+        section:first-letter{
+            color:#00f;
+            font-size:30pt;
+            font-weight:bold;
+        }
+        /* set first letter of p */
+        p:first-letter{
+            color:#00f;
+            font-size:40pt;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<span>abc</span>
+<section>I am a programmer</section>
+<p>Wei</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>ID selector</title>
+    <style type="text/css">
+        /*effective to all divs*/
+        div {
+            width: 200px;
+            height: 30px;
+            background-color: #ddd;
+            padding: 3px;
+        }
+        /*effective to divs who have id*/
+        #xx {
+            border: 2px dotted black;
+            background-color: #888;
+        }
+        /*only effective to p whose id is xx
+        p#xx {
+            border: 2px dotted black;
+            background-color: #888;
+        }
+        */
+    </style>
+</head>
+<body>
+<div>div</div>
+<div id="xx">div with id equals xx</div>
+</body>
+</html>

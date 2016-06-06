@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>:type</title>
+    <style type="text/css">
+        span {
+            display: block;
+            padding: 5px;
+        }
+        /* first same type sibling */
+        span:first-of-type {
+            border: 1px solid black;
+        }
+        /* last same type sibling */
+        span:last-of-type {
+            background-color: #aaa;
+        }
+        span:nth-of-type(2) {
+            color: #888;
+        }
+        span:nth-last-of-type(2) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div>Family</div>
+<span>Wei</span>
+<span>Qu</span>
+<span>Na</span>
+<span>He</span>
+<hr/>
+<div>
+    <div id="father">Wei</div>
+    <div id="mother">Na</div>
+    <span id="son">Chuanbo</span>
+    <span id="dad">Frank</span>
+    <span id="mum">Sandy</span>
+    <div id="family">Family</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>new document</title>
+    <style type="text/css">
+        /*define counter for div: categorycounter*/
+        div>h2{
+            counter-increment: categorycounter;
+            /*counter-reset: subcounter;*/
+        }
+        div>div{
+            counter-increment: subcounter;
+        }
+        /*insert counter before div's child div*/
+        div>div{
+            content: counter(categorycounter, georgian) '.';
+            font-size: 20pt;
+            font-weight: bold;
+        }
+        div>h2:before{
+            content: counter(categorycounter, georgian) '.';
+            font-size: 20pt;
+            font-weight: bold;
+        }
+        div>div:before{
+            content: 'the ' counter(subcounter, cjk-ideographic) '.';
+            font-size: 14pt;
+            font-weight: bold;
+            margin-left:24px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>Family</h2>
+    <div>Wei Qu</div>
+    <div>Na He</div>
+    <div>Austin Qu</div>
+    <h2>Member</h2>
+    <div>Frank</div>
+    <div>Sandy</div>
+</div>
+</body>
+</html>

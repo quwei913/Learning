@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>sibling selector</title>
+    <style type="text/css">
+        /*effective to sibling node whose class attribution is long and id is android*/
+        #android ~ .long {
+            background-color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+<div>div</div>
+<div class="long">family</div>
+<div id="android">Wei</div>
+<p class="long">Qu</p>
+<div class="long">Na</div>
+</body>
+</html>

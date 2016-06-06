@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>attribution</title>
+    <style type="text/css">
+        /*effective to all divs*/
+        div {
+            width: 300px;
+            height: 30px;
+            background-color: #eee;
+            border: 1px solid back;
+            padding: 10px;
+        }
+        /*effective to divs who have id*/
+        div[id] {
+            background-color: #aaa;
+        }
+        /*effective to divs whose id includes xx*/
+        div[id*=xx] {
+            background-color:#999;
+        }
+        /*effective to divs whose id starts with xx*/
+        div[id^=xx] {
+            background-color: #555;
+            color: #fff;
+        }
+        /*effective to divs whose id equals xx*/
+        div[id=xx] {
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div>div</div>
+<div id="a">div with id</div>
+<div id="zzxx">div with xx in id</div>
+<div id="xxyy">div with id starts with xx</div>
+<div id="xx">div with id equals xx</div>
+</body>
+</html>

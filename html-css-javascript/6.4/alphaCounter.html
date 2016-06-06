@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>customized counter</title>
+    <style type="text/css">
+        /*define counter for div: mycounter*/
+        div>div{
+            counter-increment: mycounter;
+        }
+        /*insert counter before div's child div*/
+        div>div:before{
+            content: 'the ' counter(mycounter, lower-greek) '.';
+            font-size: 20pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>Wei Qu</div>
+    <div>Na He</div>
+    <div>Austin Qu</div>
+</div>
+</body>
+</html>

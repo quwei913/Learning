@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>first line</title>
+    <style type="text/css">
+        span {
+            display:block;
+        }
+        /*change color of first line in span. set display to block since span is inline element*/
+        span:first-line{
+            color: #f00;
+            font-size:20pt;
+        }
+        /* set first line of section */
+        section:first-line{
+            color:#00f;
+            font-size:30pt;
+        }
+        /* set first line of p */
+        p:first-line{
+            color:#00f;
+            font-size:30pt;
+        }
+    </style>
+</head>
+<body>
+<span>abc<br/>xyz</span>
+<section>I am a programmer<br/>
+poor man</section>
+<p style="width:160px">Wei<br/>Qu</p>
+</body>
+</html>

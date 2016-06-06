@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>class selector</title>
+    <style type="text/css">
+        /*effective to all myclass*/
+        .myclass {
+            width: 240px;
+            height: 40px;
+            background-color: #dddddd;
+        }
+        /*effective to div whose class is myclass*/
+        div.myclass {
+            border: 2px dotted black;
+            background-color: #888888;
+        }
+    </style>
+</head>
+<body>
+<div class="myclass">div whose class is myclass</div>
+<p class="myclass">p whose class is myclass</p>
+</body>
+</html>

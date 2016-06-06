@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>child selector</title>
+    <style type="text/css">
+        /*effective to all myclass*/
+        div {
+            width: 350px;
+            height: 60px;
+            background-color: #ddd;
+            margin: 5px;
+        }
+        /*effective to element whose class is a and included in div*/
+        div>.a {
+            border: 200px;
+            height: 35px;
+            border: 2px dotted black;
+            background-color: #888;
+        }
+    </style>
+</head>
+<body>
+<div>div</div>
+<div><p class="a">element whose class is a and is div's child</p></div>
+<div><section><p class="a">p whose class is a and in div</p></section></div>
+</body>
+</html>

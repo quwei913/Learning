@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>child</title>
+    <style type="text/css">
+        li:first-child {
+            border: 1px solid black;
+        }
+        li:last-child {
+            background-color: #aaa;
+        }
+        li:nth-child(2){
+            color: #888;
+        }
+        li:nth-last-child(2){
+            font-weight: bold;
+        }
+        /* define style for unique child */
+        span:only-child{
+            font-size: 30pt;
+            font-family: "arial";
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>Wei Qu</li>
+    <li>Na He</li>
+    <li>Austin Qu</li>
+    <li>Member</li>
+    <li>Frank</li>
+</ol>
+<ul>
+    <li id="mother">Sandy</li>
+    <li id="father">Wei</li>
+    <li id="son">Austin</li>
+    <li><span id="family">Na</span></li>
+</ul>
+<span>Family</span>
+</body>
+</html>
