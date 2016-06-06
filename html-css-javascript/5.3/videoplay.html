@@ -1,0 +1,28 @@
+<h2>video play</h2>
+<video id="mv" src="../5.1/sample.mp4" controls>
+    not supported
+</video><br/>
+<input id="bn" type="button" value="play"/><span id="detail"></span> seconds
+<script type="text/javascript">
+    var bn = document.getElementById("bn");
+    var mv = document.getElementById("mv");
+    var detail = document.getElementById("detail");
+    // listener
+    mv.ontimeupdate = function()
+    {
+        detail.innerHTML = mv.currentTime + "/" + mv.duration;
+    };
+    bn.onclick = function()
+    {
+        if(mv.paused)
+        {
+            mv.play();
+            bn.value = "pause";
+        }
+        else
+        {
+            mv.pause();
+            bn.value = "play";
+        }
+    }
+</script>

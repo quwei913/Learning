@@ -1,0 +1,52 @@
+<title>music player</title>
+<script type="text/javascript">
+    // all music
+    var musics = [
+        "../5.1/notify.wav",
+        "../5.1/tada.wav",
+        "../5.1/ding.wav",
+    ];
+    // index
+    var index = 0;
+    // order
+     var playType;
+     window.onload = function()
+     {
+        var typeSel = document.getElementById("typeSel");
+        // change type when choose
+        typeSel.onchange = function()
+        {
+            window.playType = typeSel.value;
+        }
+        var player = document.getElementById("player");
+        // load first music
+        player.src = musics[index];
+        player.onended = function()
+        {
+            if(playType == "random")
+            {
+                // random
+                index = Math.floor(Math.random() * musics.length);
+                // play
+                player.src = musics[index];
+            }
+            else
+            {
+                // next
+                player.src = musics[++index % musics.length];
+            }
+            // play
+            player.play();
+        }
+     }
+</script>
+<body>
+<h2>music player</h2>
+<select id="typeSel" style="width:160px">
+    <option value="sequence">order</option>
+    <option value="random">random</option>
+</select><br/>
+<audio id="player" controls>
+    not supported
+</audio>
+</body>
