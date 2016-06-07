@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>3D</title>
+    <script type="text/javascript">
+        function chg()
+        {
+            document.getElementById("up").className="solid";
+        }
+    </script>
+    <style type="text/css">
+        .solid {
+            width:160px;
+            text-align:center;
+            border-right: #222 3px solid;
+            border-top: #ddd 3px solid;
+            border-left: #ddd 3px solid;
+            border-bottom: #222 3px solid;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<input type="button" onclick='chg();' value="3d" />
+<div id="up">3d layer</div>
+</body>
+</html>

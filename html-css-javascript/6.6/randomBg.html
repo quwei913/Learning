@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>random background color</title>
+    <script type="text/javascript">
+        function changeBg()
+        {
+            var bgColor="";
+            for (var i = 0; i < 6; i++)
+            {
+                bgColor += "" + Math.round(Math.random() * 9);
+            }
+            document.body.style.backgroundColor="#" + bgColor;
+        }
+        document.onclick = changeBg;
+    </script>
+</head>
+<body>
+</body>
+</html>

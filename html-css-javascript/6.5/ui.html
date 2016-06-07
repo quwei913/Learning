@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>UI selector</title>
+    <style type="text/css">
+        td {
+            border: 1px solid black;
+            padding: 4px;
+        }
+        tr:hover {
+            background-color: #aaa;
+        }
+        input:active {
+            background-color: blue;
+        }
+        :focus {
+            text-decoration: underline;
+        }
+        :enabled {
+            font-family: 'Arial';
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        :disabled {
+            font-family: 'italic';
+            font-size:14pt;
+        }
+        :checked {
+            outline: red solid 5px;
+        }
+        :default {
+            outline: #bb solid 5px;
+        }
+    </style>
+</head>
+<body>
+<table style="width:400px;border-collapse:collapse">
+    <tr>
+        <td>Family</td><td>109</td>
+    </tr>
+    <tr>
+        <td>Na</td><td>89</td>
+    </tr>
+    <tr contentEditable="true">
+        <td>Wei</td><td>89</td>
+    </tr>
+</table>
+<button disable>disabled</button>
+<input type="text" value="usabletext"/>
+male: <input type="radio" value="male" name="gender"/>
+female: <input type="radio" value="female" name="gender"/>
+unknown: <input type="radio" checked value="unknown" name="gender"/>
+</body>
+</html>

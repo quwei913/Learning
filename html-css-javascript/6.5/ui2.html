@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>UI selector</title>
+    <style type="text/css">
+        td {
+            border: 1px solid black;
+            padding: 4px;
+        }
+        :read-only {
+            background-color: #eee;
+        }
+        :read-write {
+            background-color: #8e8;
+        }
+        :-moz-read-only {
+            background-color: #eee;
+        }
+        :-moz-read-write {
+            background-color: #8e8;
+        }
+    </style>
+</head>
+<body>
+<table style="width:400px;border-collapse:collapse">
+    <tr>
+        <td>Family</td><td>109</td>
+    </tr>
+    <tr>
+        <td>Na</td><td>89</td>
+    </tr>
+    <tr contentEditable="true">
+        <td>Wei</td><td>89</td>
+    </tr>
+</table>
+<input type="text" readonly value="readonlytext"/>
+<input type="text" value="readwritetext"/>
+</body>
+</html>
