@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    function Person(national, age)
+    {
+        this.age = age;
+        Person.national = national;
+        var bb = 0;
+    }
+    var p1 = new Person('China', 29);
+    document.writeln("first person object <br />");
+    document.writeln("p1 age " + p1.age + "<br />");
+    document.writeln("p1 national " + p1.national + "<br />");
+    document.writeln("static " + Person.national + "<br />");
+    document.writeln("p1 bb " + p1.bb + "<br /><hr />");
+    var p2 = new Person('US', 32);
+    document.writeln("second person <br />");
+    document.writeln("p1 age " + p1.age + "<br />");
+    document.writeln("p1 national " + p1.national + "<br />");
+    document.writeln("p2 age " + p2.age + "<br />");
+    document.writeln("p2 national " + p2.national + "<br />");
+    document.writeln("static " + Person.national + "<br />");
+</script>

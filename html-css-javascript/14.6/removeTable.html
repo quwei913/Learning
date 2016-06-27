@@ -1,0 +1,37 @@
+<body>
+<input id="delrow" type="button" value="delete last row" onclick="delrow();"/><br />
+<input id="delcell" type="button" value="delete last unit" onclick="delcell();"/><br />
+<table id="test" border="1" style="width:400px;">
+    <caption>family</caption>
+    <tr>
+        <td>wei</td>
+        <td>qu</td>
+    <tr>
+        <td>Frank</td>
+        <td>Sandy</td>
+    </tr>
+    <tr>
+        <td>He</td>
+        <td>Na</td>
+    </tr>
+</table>
+<script type="text/javascript">
+    var tab = document.getElementById("test");
+    var delrow = function()
+    {
+        if(tab.rows.length > 0)
+        {
+            tab.deleteRow(tab.rows.length - 1);
+        }
+    }
+    var delcell = function()
+    {
+        var rowList = tab.rows;
+        var lastRow = rowList.item(rowList.length - 1);
+        if(lastRow.cells.length > 0)
+        {
+            lastRow.deleteCell(lastRow.cells.length - 1);
+        }
+    }
+</script>
+</body>

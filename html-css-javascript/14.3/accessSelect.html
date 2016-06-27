@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>access form</title>
+</head>
+<body>
+<select id="mySelect" name="mySelect" size="6">
+    <option value="java">family</option>
+    <option value="ssh">wei</option>
+    <option value="ajax">qu</option>
+    <option value="xml">frank</option>
+    <option name="ejb">austin</option>
+    <option name="workflow">sandy</option>
+ </select><br />
+<input type="button" value="first" onclick="change(curTarget.options[0]);" />
+<input type="button" value="previous"
+       onclick="change(curTarget.options[curTarget.selectedIndex - 1]);" />
+<input type="button" value="next" onclick="change(curTarget.options[curTarget.selectedIndex + 1]);" />
+<input type="button" value="last" onclick="change(curTarget.options[curTarget.length - 1]);" />
+<script type="text/javascript">
+    var curTarget = document.getElementById("mySelect");
+    var change = function(target)
+    {
+        alert(target.text);
+    }
+</script>
+</form>
+</body>
+</html>

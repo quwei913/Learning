@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>access by node</title>
+    <style type="text/css">
+        .selected {
+            background-color:#66f
+        }
+    </style>
+</head>
+<body>
+<ol id="books">
+    <li id="java">Family</li>
+    <li id="ssh">Wei</li>
+    <li id="ajax" class="selected">Qu</li>
+    <li id="xml">Sandy</li>
+    <li id="ejb">He</li>
+    <li id="workflow">Frank</li>
+</ol>
+    <input type="button" value="parent"
+       onclick="change(curTarget.parentNode);"/>
+    <input type="button" value="first"
+       onclick="change(curTarget.parentNode.firstChild.nextSibling);"/>
+    <input type="button" value="previous"
+       onclick="change(curTarget.previousSibling.previousSibling);"/>
+    <input type="button" value="next"
+       onclick="change(curTarget.nextSibling.nextSibling);"/>
+    <input type="button" value="last"
+       onclick="change(curTarget.parentNode.lastChild.previousSibling);"/>
+    <script type="text/javascript">
+        var curTarget = document.getElementById("ajax");
+        var change = function(target)
+        {
+            alert(target.innerHTML);
+        }
+    </script>
+</body>
+</html>

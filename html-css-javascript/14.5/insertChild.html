@@ -1,0 +1,9 @@
+<ul id="d">
+    <li>family</li>
+</ul>
+<script type="text/javascript">
+    var ul = document.getElementById("d");
+    var ajax = ul.firstChild.nextSibling.cloneNode(false);
+    ajax.innerHTML = "aaa";
+    ul.insertBefore(ajax, ul.firstChild);
+</script>

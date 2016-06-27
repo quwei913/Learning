@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    function Person(name, age)
+    {
+        this.name = name;
+        this.age = age;
+        this.info = function()
+        {
+            alert('info method!');
+        }
+    }
+    var p = new Person('wei', 30);
+    for(propName in p)
+    {
+        document.writeln('p ' + propName + " attribution: " + p[propName] + "<br />");
+    }
+</script>

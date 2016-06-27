@@ -1,0 +1,12 @@
+<body id="test">
+<script type="text/javascript">
+    var a = document.createElement("select");
+    for(var i = 0; i < 10; i++)
+    {
+        var op = new Option('new option ' + i, i);
+        a.options[i] = op;
+    }
+    a.size = 5;
+    document.getElementById("test").appendChild(a);
+</script>
+</body>

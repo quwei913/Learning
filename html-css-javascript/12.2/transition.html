@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>transition</title>
+    <style type="text/css">
+        div {
+            background-color: red;
+            width: 200px;
+            height: 160px;
+            -moz-transition: background-color 2s linear 2s,
+            width 2s linear 2s, height 2s linear 2s;
+            -webkit-transition: background-color 2s linear 2s,
+            width 2s linear 2s, height 2s linear 2s;
+            -o-transition: background-color 2s linear 2s,
+            width 2s linear 2s, height 2s linear 2s;
+        }
+    </style>
+    <script type="text/javascript">
+        var originWidth = 200;
+        var originHeight = 160;
+        var zoom = function(scale, bgColor)
+        {
+            var target = document.getElementById("target");
+            target.style.width = originWidth * scale + "px";
+            target.style.height = originWidth * scale + "px";
+            target.style.backgroundColor = bgColor;
+        }
+    </script>
+</head>
+<body>
+<button onclick="zoom(2, 'blue');">zoom in</button>
+<button onclick="zoom(0.5, 'green');">zoom out</button>
+<button onclick="zoom(1, 'red');">reset</button>
+<div id="target"></div>
+</body>
+</html>

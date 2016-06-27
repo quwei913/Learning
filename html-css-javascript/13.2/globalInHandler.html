@@ -1,0 +1,10 @@
+<script type="text/javascript">
+    var scope = "global";
+    function test()
+    {
+        document.writeln(scope + "<br/>");
+        var scope = "local";
+        document.writeln(scope + "<br/>");
+    }
+    test();
+</script>

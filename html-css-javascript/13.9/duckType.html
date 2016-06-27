@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    function changeAge(person)
+    {
+        if(typeof person == 'object'
+        && typeof person.age == 'number')
+        {
+            document.write("before person age: "  + person.age + "<br />");
+            person.age = 10;
+            document.write("in person age: " + person.age + "<br />");
+        }
+        else
+        {
+            document.writeln("wrong type " + typeof person + "<br />");
+        }
+    }
+    changeAge();
+    changeAge('xxx');
+    changeAge(true);
+    p = {abc : 34};
+    changeAge(p);
+    person = {age : 25};
+    changeAge(person);
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>box</title>
+    <style type="text/css">
+        body{
+            margin:0px;
+        }
+        div#container{
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            width: 960px;
+            text-align: left;
+        }
+        #container>div{
+            border: 1px solid #aaf;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border-radius: 12px 12px 0px 0px;
+            background-color: #ffc;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+<div style="margin:auto;text-align:center;">
+    <div id="container">
+        <div style="width:220px">
+        <h2>Family</h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;Family; Wei; Qu; Frank; Na; He; <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;Family; Wei; Qu; Frank; Na; He;
+        </div>
+        <div style="width:500px">
+            <h2>Family</h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;Family; Wei; Qu; Frank; Na; He; <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Family; Wei; Qu; Frank; Na; He;
+        </div>
+        <div style="width:240px">
+            <h2>Family</h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;Family; Wei; Qu; Frank; Na; He; <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Family; Wei; Qu; Frank; Na; He;
+        </div>
+    </div>
+</div>
+</body>
+</html>

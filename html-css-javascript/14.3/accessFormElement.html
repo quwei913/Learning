@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>access form</title>
+</head>
+<body>
+<form id="d" action="" method="get">
+    <input name="user" type="text"/><br />
+    <input name="pass" type="text"/><br />
+    <select name="color">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+    </select><br />
+    <input type="button" value="first"
+           onclick="alert(document.getElementById('d').elements[0].value);" />
+    <input type="button" value="second"
+           onclick="alert(document.getElementById('d').elements['pass'].value);" />
+    <input type="button" value="third"
+           onclick="alert(document.getElementById('d').color.value);" />
+</form>
+</body>
+</html>

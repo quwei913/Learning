@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    function outer()
+    {
+        function inner1()
+        {
+            document.write("local 1111<br/>");
+        }
+        function inner2()
+        {
+            document.write("local 2222<br/>");
+        }
+        document.write("start testing local...<br/>");
+        inner1();
+        inner2();
+        document.write("end testing...<br/>");
+    }
+    document.write("before outer...<br/>");
+    outer();
+    inner1();
+    document.write("after outer...<br/>");
+</script>

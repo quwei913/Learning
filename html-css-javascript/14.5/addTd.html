@@ -1,0 +1,18 @@
+<body id="test">
+<script type="text/javascript">
+    var a = document.createElement("table");
+    a.border = 1;
+    var caption = a.createCaption();
+    caption.innerHTML = "title";
+    for(var i = 0; i < 5; i++)
+    {
+        var tr = a.insertRow(i);
+        for(var j =0; j < 7; j++)
+        {
+            var td = tr.insertCell(j);
+            td.innerHTML = "content " + i + j;
+        }
+    }
+    document.getElementById("test").appendChild(a);
+</script>
+</body>

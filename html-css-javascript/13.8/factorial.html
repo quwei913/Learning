@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    var factorial = function(n)
+    {
+        if(typeof(n) == "number")
+        {
+            if(n == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return n * factorial(n - 1);
+            }
+        }
+        else
+        {
+            alert('incorrect!');
+        }
+    }
+    alert(factorial(5));
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>animation</title>
+    <style type="text/css">
+    @-webkit-keyframes 'complex' {
+        0% {
+            -webkit-transform: rotate(0deg) scale(1);
+            background-color: #f00;
+        }
+        40% {
+            -webkit-transform: rotate(720deg) scale(0.1);
+            background-color: #ff0;
+        }
+        60% {
+            -webkit-transform: rotate(1080deg) scale(4);
+            background-color: #f0f;
+        }
+        100% {
+            -webkit-transform: rotate(0deg) scale(1);
+            background-color: #f0f;
+        }
+    }
+    div {
+        background-color: gray;
+        position: absolute;
+        width: 60px;
+        top: 120px;
+        height: 60px;
+        left: 100px;
+        border: 1px solid black;
+    }
+    div:hover {
+        -webkit-animation-name: 'complex';
+        -webkit-animation-duration: 8s;
+        -webkit-animation-iteration-count: 1;
+    }
+    </style>
+</head>
+<body>
+<div>animation</div>
+</body>
+</html>

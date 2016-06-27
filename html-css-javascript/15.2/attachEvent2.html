@@ -1,0 +1,15 @@
+<body>
+<input type="button" id="bn1" name="bn1" value="click" />
+<script type="text/javascript">
+    var test = function()
+    {
+        alert('clicked');
+    }
+    var haha = function()
+    {
+        alert('haha is triggered');
+    }
+    document.getElementById("bn1").attachEvent("onclick", test);
+    document.getElementById("bn1").attachEvent("onclick", haha);
+</script>
+</body>

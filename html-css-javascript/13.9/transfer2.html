@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    function changeAge(arg1)
+    {
+        person.age = 10;
+        document.write("person.age is " + person.age + "<br/>");
+        //person = null;
+    }
+    var person = {age : 5};
+    document.write("before is " + person.age + "<br />");
+    changeAge(person);
+    document.write("after is " + person.age + "<br />");
+    document.write("person is " + person);
+</script>

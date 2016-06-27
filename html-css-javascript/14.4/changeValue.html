@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>edit table</title>
+</head>
+<body>
+change <input id="row" type="text" size="2" /> row,
+<input id="cel" type="text" size="2" /> column:
+<input id="celVal" type="text" size="16" /><br />
+<input id="chg" type="button" value="change" onclick="change();" />
+<table id="d" border="1">
+    <tr>
+        <td>Wei</td>
+        <td>Qu</td>
+    </tr>
+    <tr>
+        <td>Frank</td>
+        <td>Sandy</td>
+    </tr>
+    <tr>
+        <td>He</td>
+        <td>Na</td>
+    </tr>
+</table>
+<script type="text/javascript">
+    var change = function()
+    {
+        var tb = document.getElementById("d");
+        var row = document.getElementById("row").value;
+        row = parseInt(row);
+        if(isNaN(row))
+        {
+            alert("row should be integer");
+            return false;
+        }
+        var cel = document.getElementById("cel").value;
+        cel = parseInt(cel);
+        if(isNaN(cel))
+        {
+            alert("cel should be integer");
+            return false;
+        }
+        if(row > tb.rows.length ||
+            cel > tb.rows.item(0).cells.length)
+        {
+            alert("not exist");
+            return false;
+        }
+        tb.rows.item(row - 1).cells.item(cel - 1).innerHTML
+            = document.getElementById("celVal").value;
+    }
+</script>
+</body>
+</html>

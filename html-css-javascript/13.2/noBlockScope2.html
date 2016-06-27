@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>global/local</title>
+    <script type="text/javascript">
+        var x = "global";
+    </script>
+</head>
+<body>
+<input type="button" value="local"
+       onclick="var x = 'local'; alert('x local: ' + x);"/>
+<input type="button" value="global"
+       onclick="alert('x global: ' + x);"/>
+</body>
+</html>

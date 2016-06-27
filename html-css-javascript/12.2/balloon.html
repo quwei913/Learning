@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>transition</title>
+    <style type="text/css">
+        img#target {
+            position: absolute;
+            -moz-transition: left 5s linear, top 5s linear;
+            -webkit-transition: left 5s linear, top 5s linear;
+            -o-transition: left 5s linear, top 5s linear;
+        }
+    </style>
+</head>
+<body>
+<img id="target" src="../1.3/a.gif" alt="son"/>
+<script type="text/javascript">
+    var target = document.getElementById("target");
+    target.style.left = "0px";
+    target.style.top = "0px";
+    document.onmousedown = function(evt)
+    {
+        target.style.left = evt.pageX + "px";
+        target.style.top = evt.pageY + "px";
+    }
+</script>
+</body>
+</html>

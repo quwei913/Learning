@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function Person(name, age)
+    {
+        this.name = name;
+        this.age = age;
+        this.info = function()
+        {
+            document.writeln("name: " + this.name);
+            document.writeln("age: " + this.age);
+        }
+    }
+    var p1 = new Person('wei', 29);
+    p1.info();
+    document.writeln("<hr />");
+    var p2 = new Person('sandy', 33);
+    p2.info();
+</script>

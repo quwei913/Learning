@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    function Person(name, age)
+    {
+        this.name = name;
+        this.age = age;
+        this.info = function()
+        {
+            document.writeln("name is: " + this.name + "<br />");
+            document.writeln("age is: " + this.age + "<br />");
+        }
+    }
+    var p1 = new Person('wei', 29);
+    p1.info();
+    Person.prototype.walk = function()
+    {
+        document.writeln(this.name + ' slowly...<br />');
+    }
+    document.writeln('<hr />');
+    var p2 = new Person('leegang', 30);
+    p2.info();
+    document.writeln('<hr />');
+    p2.walk();
+    p1.walk();
+</script>

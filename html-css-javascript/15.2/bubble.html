@@ -1,0 +1,21 @@
+<body onclick="gotClick('body');">
+    <table onclick="gotClick('table');">
+        <tr onclick="gotClick('tr');">
+            <td onclick="gotClick('td');">
+                <p onclick="gotClick('p');">
+                    <input type="button" value="click"
+                           onclick="gotClick('button');"/>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    <div id="results"></div>
+    <script type="text/javascript">
+        var gotClick = function(who)
+        {
+            document.getElementById("results").innerHTML
+                += who + " clicked<br />";
+        }
+    </script>
+</body>

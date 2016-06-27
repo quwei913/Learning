@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>horizontal box</title>
+    <style type="text/css">
+        div#container{
+            border: 1px solid black;
+            padding: 5px;
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            width: 600px;
+            height: 140px;
+            box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            -webkit-box-orient: horizontal;
+        }
+        div>div{
+            border: 1px solid #aaf;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border-radius: 12px 12px 0px 0px;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div style="box-flex:1;-moz-box-flex:1;-webkit-box-flex:1;">1
+    </div>
+    <div>2
+    </div>
+    <div style="box-flex:3;-moz-box-flex:3;-webkit-box-flex:3;">3
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>access table</title>
+</head>
+<body>
+<table id="d" border="1">
+
+    <caption>family</caption>
+    <tr>
+        <td>Wei</td>
+        <td>Qu</td>
+    </tr>
+    <tr>
+        <td>Frank</td>
+        <td>Sandy</td>
+    </tr>
+    <tr>
+        <td>He</td>
+        <td>Na</td>
+    </tr>
+</table>
+<input type="button" value="title" onclick=
+        "alert(document.getElementById('d').caption.innerHTML);" />
+<input type="button" value="first row, first unit" onclick=
+        "alert(document.getElementById('d').rows[0].cells[0].innerHTML);" />
+<input type="button" value="second row, second unit" onclick=
+        "alert(document.getElementById('d').rows[1].cells[1].innerHTML);" />
+<input type="button" value="second row, second unit" onclick=
+        "alert(document.getElementById('d').rows[2].cells[1].innerHTML);" />
+</body>
+</html>

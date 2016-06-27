@@ -1,0 +1,18 @@
+<body id="bd">
+<a href="http://www.google.com"></a><br />
+<img id="son" src="../1.3/a.gif" alt="austin"/><br />
+<form>
+    <input type="text" name="user" value="text"/><br/>
+    <input type="button" id="bn" value="button"/>
+</form>
+<script type="text/javascript">
+    alert(document.body.id);
+    alert(document.links[0].href);
+    alert(document.images['son'].alt);
+    form = document.forms[0];
+    alert(form.innerHTML);
+    alert(form.elements[0].value);
+    alert(form.elements['bn'].value);
+    alert(document.all['bn'].value);
+</script>
+</body>

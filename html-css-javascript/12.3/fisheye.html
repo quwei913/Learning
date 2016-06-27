@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>fish eye</title>
+    <style type="text/css">
+    a:link {
+        text-decoration: none;
+    }
+    div>a{
+        display: inline-block;
+        text-align: center;
+        width: 120px;
+        padding: 8px;
+        background-color: #eee;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    @-webkit-keyframes 'fisheye' {
+        0% {
+            -webkit-transform: scale(1);
+            background-color: #eee;
+            border-radius: 10px;
+        }
+        40% {
+            -webkit-transform: scale(1.5);
+            background-color: #bbb;
+            border-radius: 10px;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            background-color: #eee;
+            border-radius: 10px;
+        }
+    }
+    div>a:hover {
+        -webkit-animation-name: 'fisheye';
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+    }
+    </style>
+</head>
+<body>
+<div>
+    <a href="http://www.google.com" alt="google">google</a>
+    <a href="http://www.baidu.com" alt="baidu">baidu</a>
+    <a href="http://www.sogou.com" alt="sogou">sogou</a>
+    <a href="http://www.iciba.com" alt="iciba">iciba</a>
+</div>
+</body>
+</html>

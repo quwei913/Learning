@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    function judgeAge(age)
+    {
+        if( typeof age === "number" )
+            if(age > 60)
+            {
+                alert("old man");
+            }
+            else if(age > 40)
+            {
+                alert("mid-age");
+            }
+            else if(age > 15)
+            {
+                alert("youth");
+            }
+            else
+            {
+                alert("kid");
+            }
+        else
+        {
+            alert("must be number");
+        }
+    }
+    judgeAge(46);
+</script>

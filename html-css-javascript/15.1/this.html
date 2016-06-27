@@ -1,0 +1,9 @@
+<input type="button" value="button" name="bn"
+       onclick="showThisName();"/>
+<script type="text/javascript">
+    window.name = "test";
+    var showThisName = function()
+    {
+        alert(this.name);
+    }
+</script>

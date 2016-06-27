@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    function changeAge(person)
+    {
+        if(typeof person == 'object')
+        {
+            person.age = 10;
+            document.write("person age is: " + person.age + "<br />");
+        }
+        else
+        {
+            alert("wrong type: " + typeof person);
+        }
+    }
+    changeAge();
+</script>

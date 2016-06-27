@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>table</title>
+    <style type="text/css">
+        td {
+            background-color:#ccc;
+            border: 1px solid black;
+        }
+        table {
+            table-layout: fixed;
+            border-collapse:collapse;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+width calculated by two cols
+<table>
+    <col style="width:240px"/>
+    <col style="width:80px"/>
+    <tr><td>Qu</td><td>He</td></tr>
+    <tr><td>Family</td><td>Wei</td></tr>
+    <tr><td>Sandy</td><td>Frank</td></tr>
+    <tr><td>Chuanbo</td><td>Austin</td></tr>
+</table>
+width calculated by first unit
+<table>
+    <tr><td style="width:80px">Na</td><td style="width:300px">Frank</td></tr>
+    <tr><td>Family</td>
+        <td>Na</td></tr>
+</table>
+average width for each col
+<table style="width:300px">
+    <tr><td>Family</td><td>Wei</td></tr>
+    <tr><td>Qu</td><td>He</td></tr>
+</table>
+</body>
+</html>

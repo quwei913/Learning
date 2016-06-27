@@ -1,0 +1,28 @@
+<script type="text/javascript">
+        var geoHandler = function(position)
+        {
+            var geoMsg = "location: <br />";
+            geoMsg += "timestamp: " + position.timestamp + "<br/>";
+            var coords = position.coords;
+            for(var prop in coords)
+            {
+                geoMsg += prop + "-->" + coords[prop] + "<br/>";
+            }
+            document.writeln(geoMsg);
+        }
+        var errorHandler = function(error)
+        {
+            var errMsg = {
+                1:'declined',
+                2:'unavailable',
+                3:'timeout'
+            };
+            alert(errMsg[error.code]);
+        }
+        navigator.geolocation.getCurrentPosition(geoHandler
+        , errorHandler
+        , {
+            enableHighAccuracy:true,
+            maximumAge:1000
+        });
+</script>

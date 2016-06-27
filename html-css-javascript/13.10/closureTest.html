@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    function Person()
+    {
+        var locVal = 'wei';
+        this.info = function()
+        {
+            document.writeln("locVal is: " + locVal);
+            return locVal;
+        }
+    }
+    var p = new Person();
+    var val = p.info();
+    alert(val);
+</script>

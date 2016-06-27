@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    var myObj = new Object();
+    myObj.name = 'wei';
+    myObj.age = 29;
+    function abc()
+    {
+        document.writeln("name is :" + this.name);
+        document.writeln("<br />");
+        document.writeln("age is :" + this.age);
+    }
+    myObj.info = abc;
+    document.writeln("<hr />");
+    myObj.info();
+</script>

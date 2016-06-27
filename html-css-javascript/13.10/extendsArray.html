@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    Array.prototype.indexof = function(obj)
+    {
+        var result = -1;
+        for (var i = 0; i < this.length; i++)
+        {
+            if (this[i] == obj)
+            {
+                result = i;
+                break;
+            }
+        }
+        return result;
+    }
+    var arr = [4, 5, 7, -2];
+    alert(arr.indexof(-2));
+</script>

@@ -1,0 +1,49 @@
+<body onload="stack();">
+<script type="text/javascript">
+    var statusText = 'customized animate status text......';
+    var out = "";
+    var pause = 5;
+    var animateWidth = 20;
+    var position = animateWidth;
+    var i = 0;
+    var stack = function()
+    {
+        if(statusText.charAt(i) != " ")
+        {
+            out = "";
+            for(var j = 0; j < i; i++)
+            {
+                out += statusText.charAt(j);
+            }
+            for(j = i; j < position; j++)
+            {
+                out += " ";
+            }
+            out += statusText.charAt(i);
+            for(j = position; j < animateWidth; j++)
+            {
+                out += " ";
+            }
+            window.status = out;
+            if(position == i)
+            {
+                animateWidth++;
+                position = animateWidth;
+                i++;
+            }
+            else
+            {
+                position--;
+            }
+        }
+        else
+        {
+            i++
+        }
+        if(i < statusText.length)
+        {
+            setTimeout("stack()", pause);
+        }
+    }
+</script>
+</body>

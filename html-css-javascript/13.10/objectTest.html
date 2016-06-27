@@ -1,0 +1,11 @@
+<script type="text/javascript">
+    function Person(name)
+    {
+        this.name = name;
+    }
+    var p = new Person('wei');
+    if(p instanceof Person)
+        document.writeln("p is instance of Person<br />");
+    if(p instanceof Object)
+        document.writeln("p is instance of Object");
+</script>

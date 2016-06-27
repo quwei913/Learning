@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    function Person(name)
+    {
+        this.name = name;
+        this.info = function()
+        {
+            alert("name is: " + this.name);
+        }
+    }
+    var p = new Person("wei");
+    p.info();
+    var name = "test";
+    p.info.call(window);
+</script>

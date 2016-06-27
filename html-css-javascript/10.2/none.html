@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>none</title>
+    <style type="text/css">
+        div {
+            border:2px solid black;
+            width:300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="hidden"
+       onclick="document.getElementById('test1').style.display='none';"/>
+<input type="button" value="display"
+       onclick="document.getElementById('test1').style.display='';"/>
+<div id="test1">display</div>
+<input type="button" value="hidden"
+       onclick="document.getElementById('test2').style.visibility='hidden';"/>
+<input type="button" value="display"
+       onclick="document.getElementById('test2').style.visibility='visible';"/>
+<div id="test2">visibility</div>
+</body>
+</html>

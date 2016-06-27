@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>vertical box</title>
+    <style type="text/css">
+        div#container{
+            border: 1px solid black;
+            padding: 5px;
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            width: 600px;
+            height: 300px;
+            box-orient: vertical;
+            -moz-box-orient: vertical;
+            -webkit-box-orient: vertical;
+        }
+        div>div{
+            border: 1px solid #aaf;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border-radius: 12px 12px 0px 0px;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1
+        </div>
+        <div>2
+        </div>
+        <div>3
+        </div>
+    </div>
+</body>
+</html>

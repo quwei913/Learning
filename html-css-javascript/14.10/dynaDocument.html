@@ -1,0 +1,19 @@
+<body>
+    <script type="text/javascript">
+            var n = 0;
+            var win = null;
+            var show = function(msg)
+            {
+                if((win == null) || (win.closed))
+                {
+                    win = window.open("", "console"
+                        ,"width=400,height=25-,resizable");
+                    win.document.open("text/html");
+                }
+                win.focus();
+                win.document.writeln(msg);
+            }
+    </script>
+    <input type="button" value="click"
+           onclick="show('clicked:' + ++n + ' times.<br/>');">
+</body>

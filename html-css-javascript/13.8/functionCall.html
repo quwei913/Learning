@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    var each = function(array, fn)
+    {
+        for(var index in array)
+        {
+            fn.call(null, index, array[index]);
+        }
+    }
+    each([4,20,3], function(index, ele)
+    {
+        document.write(index + " element is: " + ele + "<br />");
+    });
+</script>

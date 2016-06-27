@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>position</title>
+</head>
+<body>
+Wei<br />
+Qu<br />
+Na<br />
+He<br />
+<div id="Layer1" style="position:absolute;left:40px;top:20px;
+width:180px;
+height:88px;
+z-index:2; background-color: #ccc;">
+    Layer1, z-index:2;Layer1, z-index:2;Layer1, z-index:2;Layer1, z-index:2;Layer1, z-index:2;Layer1, z-index:2;
+</div>
+<div id="Layer2" style="position:relative;left:50px;top:10px;
+width:200px;
+height:88px;
+z-index:3; background-color: #999;">
+    Layer2, z-index:3;Layer2, z-index:3;Layer2, z-index:3;Layer2, z-index:3;Layer2, z-index:3;Layer2, z-index:3;
+</div>
+<div style="position:absolute;left:260px;top:80px;
+width:250px;
+height:200px;
+border:black solid 1px">
+    <div id="Layer3" style="position:static;left:100px;top:40px;
+width:80px;
+height:88px;
+z-index:1; background-color: #999;">
+        position:static
+        </div>
+    <div id="Layer4" style="position:static;left:100px;top:80px;
+width:80px;
+height:88px;
+z-index:1; background-color: #999;">
+        position:static
+    </div>
+</div>
+</body>
+</html>

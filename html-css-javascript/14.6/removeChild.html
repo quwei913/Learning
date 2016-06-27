@@ -1,0 +1,25 @@
+<body id="test">
+<input id="add" type="button" value="add" disabled
+       onclick="add();"/>
+<input id="del" type="button" value="delete" onclick="del();"/>
+<div id="target" style="width:240px; height:50px;
+border:1px solid black">
+    controlled target
+</div>
+<script type="text/javascript">
+    var body = document.getElementById("test");
+    var target = document.getElementById("target");
+    var add = function()
+    {
+        body.appendChild(target);
+        document.getElementById("add").disabled = "disabled";
+        document.getElementById("del").disabled = "";
+    }
+    var del = function()
+    {
+        body.removeChild(target);
+        document.getElementById("del").disabled = "disabled";
+        document.getElementById("add").disabled = "";
+    }
+</script>
+</body>

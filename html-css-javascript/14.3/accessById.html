@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>access by id</title>
+    <script type="text/javascript">
+        var accessById = function()
+        {
+            alert(document.getElementById("a").innerHTML + "\n"
+            + document.getElementById("b").value);
+        }
+    </script>
+</head>
+<body>
+    <div id="a">Family</div>
+    <textarea id="b" rows="3" cols='25'>
+        Wei
+    </textarea>
+    <input type="button" value="access" onclick="accessById();"/>
+</body>
+</html>
