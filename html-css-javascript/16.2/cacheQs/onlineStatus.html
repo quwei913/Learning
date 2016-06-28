@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html manifest="online.manifest">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>test</title>
+</head>
+<body>
+<script type="text/javascript">
+    windows.addEventListener("offline", function()
+    {
+        alert('offline, store in local!');
+    }, true);
+    if(navigator.onLine)
+    {
+        alert("online");
+    }
+    else
+    {
+        alert("offline");
+    }
+</script>
+</body>
+</html>
