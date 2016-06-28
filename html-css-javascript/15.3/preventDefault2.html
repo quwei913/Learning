@@ -1,0 +1,15 @@
+<body>
+link: <br />
+<a id="mylink" href="http://www.google.com">family</a>
+<div id="show"></div>
+<script type="text/javascript">
+        var killClicks = function(event)
+        {
+            event.preventDefault();
+            document.getElementById("show").innerHTML
+                += "capture: " + event.currentTarget + "<br>";
+        }
+        document.addEventListener('click', killClicks, true);
+        document.getElementById('mylink').addEventListener('click', killClicks, true);
+    </script>
+</body>

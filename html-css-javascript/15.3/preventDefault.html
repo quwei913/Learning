@@ -1,0 +1,12 @@
+<body>
+    link: <br />
+    <a id="mylink" href="http://www.google.com">family</a>
+    <script type="text/javascript">
+        var killClicks = function(event)
+        {
+            event.preventDefault();
+            alert('clicked');
+        }
+        document.getElementById('mylink').addEventListener('click', killClicks, true);
+    </script>
+</body>

@@ -1,0 +1,8 @@
+CACHE MANIFEST
+CACHE:
+index.html
+a.gif
+NETWORK:
+*
+FALLBACK:
+test.js offline.js

@@ -1,0 +1,65 @@
+<body>
+<h2>message</h2>
+title: <input id="title" name="title" type="text" size="60"/><br/>
+content: <textarea id="content" name="content" cols="50" rows="8"></textarea><br/>
+name: <input  id="user" name="user" type="text"/><br/>
+<input type="button" value="add" onclick="addMsg();"/>
+<input type="button" value="clear" onclick="clearMsg();"/>
+<hr/>
+<table style="width:750px">
+    <tr>
+        <th>title</th>
+        <th>content</th>
+        <th>user</th>
+        <th>time</th>
+    </tr>
+    <tbody id="show"></tbody>
+</table>
+<script type="text/javascript">
+    var loadMsg = function()
+    {
+        var tb = document.getElementById("show");
+        tb.innerHTML = "";
+        for(var i = 0; i < localStorage.length; i++)
+        {
+            var key = localStorage.key(i);
+            var date = new Date();
+            date.setTime(key);
+            var datestr = date.toLocaleDateString()
+                + "&nbsp;" + date.toLocaleTimeString();
+            var msgStr = localStorage.getItem(key);
+            var msg = JSON.parse(msgStr);
+            var row = tb.insertRow(i);
+            row.insertCell(0).innerHTML = msg.title;
+            row.insertCell(1).innerHTML = msg.content;
+            row.insertCell(2).innerHTML = msg.user;
+            row.insertCell(3).innerHTML = datestr;
+        }
+    }
+    var addMsg = function()
+    {
+        var titleElement = document.getElementById("title");
+        var contentElement = document.getElementById("content");
+        var userElement = document.getElementById("user");
+        var msg = {
+            title: titleElement.value,
+            content: contentElement.value,
+            user: userElement.value
+        }
+        var time = new Date().getTime();
+        localStorage.setItem(time, JSON.stringify(msg));
+        titleElement.value = "";
+        contentElement.value = "";
+        userElement.value = "";
+        alert("stored");
+        loadMsg();
+    }
+    function clearMsg()
+    {
+        localStorage.clear();
+        alert("cleared");
+        loadMsg();
+    }
+    window.onload = loadMsg();
+    </script>
+</body>
