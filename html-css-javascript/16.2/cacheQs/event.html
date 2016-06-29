@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html manifest="event.manifest">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>test applicationCache event</title>
+    <script type="text/javascript">
+        var test = function()
+        {
+            var msg = document.getElementById("msg");
+            applicationCache.onchecking = function()
+            {
+                msg.innerHTML += "onchecking<br/>";
+            };
+            applicationCache.onnoupdate = function()
+            {
+                msg.innerHTML += "onnoupdate<br/>";
+            };
+            applicationCache.ondownloading = function()
+            {
+                msg.innerHTML += "ondownloading<br/>";
+            };
+            applicationCache.onprogress = function()
+            {
+                msg.innerHTML += "onprogress<br/>";
+            };
+            applicationCache.onupdateready = function()
+            {
+                msg.innerHTML += "onupdateready<br/>";
+            };
+            applicationCache.oncached = function()
+            {
+                msg.innerHTML += "oncached<br/>";
+            };
+            applicationCache.onerror = function()
+            {
+                msg.innerHTML += "onerror<br/>";
+            };
+        }
+    </script>
+</head>
+<body onload="test();">
+    <h2>test applicationCache events</h2>
+    <div id="msg"></div>
+</body>
+</html>

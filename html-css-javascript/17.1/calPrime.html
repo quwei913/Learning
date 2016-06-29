@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>calculate primes</title>
+</head>
+<body>
+    <p>found primes: <div id="result"></div></p>
+    <script type="text/javascript">
+        var n = 1;
+        search:
+        while(n < 99999)
+        {
+            n += 1;
+            for(var i = 2; i <= Math.sqrt(n); i++)
+            {
+                if(n % i == 0)
+                {
+                    continue search;
+                }
+            }
+            document.getElementById('result').innerHTML += (n + ",");
+        }
+    </script>
+</body>
+</html>

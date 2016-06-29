@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html manifest="swapCache.manifest">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>check update</title>
+</head>
+<body>
+<h2>check update</h2>
+<script type="text/javascript">
+    setInterval(function()
+    {
+        applicationCache.update();
+    }, 2000);
+    applicationCache.onupdateready = function()
+    {
+        if(confirm('downloaded update, update now?'))
+        {
+            applicationCache.swapCache();
+            location.reload();
+        }
+    }
+</script>
+</body>
+</html>

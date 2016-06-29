@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>calculate primes</title>
+</head>
+<body>
+    <p>found primes: <div id="result"></div></p>
+    <script type="text/javascript">
+        var worker = new Worker('worker.js');
+        worker.onmessage = function(event)
+        {
+            document.getElementById('result').innerHTML
+                += event.data + ",";
+        };
+    </script>
+</body>
+</html>
