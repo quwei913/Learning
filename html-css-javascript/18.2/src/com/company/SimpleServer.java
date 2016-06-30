@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * Created by quwei on 16/6/30.
+ */
 import sun.misc.BASE64Encoder;
 
 import java.io.InputStream;
