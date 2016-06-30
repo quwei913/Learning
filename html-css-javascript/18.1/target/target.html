@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>cross doc receive</title>
+    <script type="text/javascript">
+        window.onmessage = function(ev)
+        {
+            if(ev.origin != "http://localhost:8080")
+            {
+                return;
+            }
+            document.body.innerHTML = (ev.origin + " message: " + ev.data);
+            ev.source.postMessage("echo " + this.location, ev.origin);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Wei"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>Choose book</title>
+    <script type="text/javascript">
+        var chooseBook = function()
+        {
+            var targetWin = window.open('http://localhost:8080/target/chooseBook.html', '_blank', 'width=510,height=300');
+            targetWin.onload = function()
+            {
+                var data = [
+                    {
+                        name : 'wei',
+                        age : 33,
+                        gender : 'male'
+                    },
+                    {
+                        name : 'sandy',
+                        age : 33,
+                        gender : 'female'
+                    },
+                    {
+                        name : 'austin',
+                        age : 2,
+                        gender : 'male'
+                    }
+                ];
+                targetWin.postMessage(data, "http://localhost:8080/target");
+            }
+        };
+        window.onmessage = function(ev)
+        {
+            if(ev.origin != "http://localhost:8080")
+            {
+                return;
+            }
+            var show = document.getElementById("result");
+            show.innerHTML = ("book is: <br/>"
+                + " name: " + ev.data.name + "<br/>"
+                + " age: " + ev.data.age + "<br/>"
+                + " gender: " + ev.data.gender + "<br/>");
+        };
+    </script>
+</head>
+<body>
+<a href="#" onclick="chooseBook();">choose books</a>
+<div id="result"></div>
+</body>
+</html>

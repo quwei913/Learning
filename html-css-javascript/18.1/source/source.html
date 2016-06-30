@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title>cross doc</title>
+    <script type="text/javascript">
+        var send = function()
+        {
+            var targetWin = window.open('http://localhost:8080/target/target.html',
+                '_blank', 'width=400,height=300');
+            targetWin.onload = function()
+            {
+                targetWin.postMessage(document.getElementById("msg").value,
+                    "http://localhost:8080/target");
+            }
+        }
+        window.onmessage = function(ev)
+        {
+            if(ev.origin != "http://localhost:8080")
+            {
+                return;
+            }
+            var show = document.getElementById("show");
+            show.innerHTML += (ev.origin + " message: " + ev.data + "<br/>");
+        };
+    </script>
+</head>
+<body>
+    message: <input type="text" id="msg" name="msg"/>
+    <button onclick="send();">message</button>
+    <div id="show"></div>
+</body>
+</html>

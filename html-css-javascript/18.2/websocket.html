@@ -1,0 +1,14 @@
+<body>
+<script type="text/javascript">
+    var webSocket = new WebSocket("ws://127.0.0.1:30000");
+    webSocket.onopen = function()
+    {
+        alert("opened");
+        webSocket.send("i am here!");
+    }
+    webSocket.onmessage = function(event)
+    {
+        alert("received: " + event.data);
+    }
+</script>
+</body>
