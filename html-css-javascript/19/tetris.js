@@ -1,6 +1,8 @@
 var TETRIS_COLS = 100;
 var TETRIS_ROWS = 100;
 var NO_BLOCK = 0;
+var CELL_SIZE = 5;
+var colors = [111, 222, 333, 444, 555, 666, 777]
 var createCanvas = function(rows, cols, cellWidth, cellHeight)
 {
     tetris_canvas = document.createElement("canvas");
@@ -92,12 +94,12 @@ var moveDown = function()
     var canDown = true;
     for(var i = 0; i < currentFall.length; i++)
     {
-        if(currentFall(i).y >= TETRIS_ROWS - 1)
+        if(currentFall[i].y >= TETRIS_ROWS - 1)
         {
             canDown = false;
             break;
         }
-        if(tetris_status[currentFall[i].y + 1][curretFall[i].x] != NO_BLOCK)
+        if(tetris_status[currentFall[i].y + 1][currentFall[i].x] != NO_BLOCK)
         {
             canDown = false;
             break;
@@ -157,31 +159,35 @@ var lineFull = function()
 {
     for(var i = 0; i < TETRIS_ROWS; i++)
     {
-        if(tetris_status[i][j] == NO_BLOCK)
+        var flag = true;
+        for(var j = 0; j < TETRIS_COLS; j++)
         {
-            flag = false;
-            break;
-        }
-    }
-    if(flag)
-    {
-        curScoreEle.innerHTML = curScore += 100;
-        localStorage.setItem("curScore", curScore);
-        if(curScore >= curSpeed * curSpeed * 500)
-        {
-            curSpeedEle.innerHTML = curSpeed += 1;
-            localStorage.setItem("curSpeed", curSpeed);
-            clearInterval(curTimer);
-            curTimer = setInterval("moveDown();", 500 / curSpeed);
-        }
-        for(var k = i; k > 0; k--)
-        {
-            for(var l = 0; l < TETRIS_COLS; l++)
+            if(tetris_status[i][j] == NO_BLOCK)
             {
-                tetris_status[k][l] = tetris_status[k-l][l];
+                flag = false;
+                break;
             }
         }
-        drawBlock();
+        if(flag)
+        {
+            curScoreEle.innerHTML = curScore += 100;
+            localStorage.setItem("curScore", curScore);
+            if(curScore >= curSpeed * curSpeed * 500)
+            {
+                curSpeedEle.innerHTML = curSpeed += 1;
+                localStorage.setItem("curSpeed", curSpeed);
+                clearInterval(curTimer);
+                curTimer = setInterval("moveDown();", 500 / curSpeed);
+            }
+            for(var k = i; k > 0; k--)
+            {
+                for(var l = 0; l < TETRIS_COLS; l++)
+                {
+                    tetris_status[k][l] = tetris_status[k-l][l];
+                }
+            }
+            drawBlock();
+        }
     }
 }
 var drawBlock = function()
@@ -205,6 +211,7 @@ var drawBlock = function()
 }
 window.onkeydown = function(evt)
 {
+    var isPlaying = true;
     switch(evt.keyCode)
     {
         case 40:
@@ -227,6 +234,171 @@ window.onkeydown = function(evt)
                 return;
             rotate();
             break;
-
     }
+}
+var moveLeft = function()
+{
+    var canLeft = true;
+    for(var i = 0; i < currentFall.length; i++)
+    {
+        if(currentFall[i].x <= 0)
+        {
+            canLeft = false;
+            break;
+        }
+        if(tetris_status[currentFall[i].y][currentFall[i].x - 1] != NO_BLOCK)
+        {
+            canLeft = false;
+            break;
+        }
+    }
+    if(canLeft)
+    {
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            tetris_ctx.fillStyle = 'white';
+            tetris_ctx.fillRect(cur.x * CELL_SIZE + 1, cur.y * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);
+        }
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            cur.x--;
+        }
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            tetris_ctx.fillStyle = colors[cur.color];
+            tetris_ctx.fillRect(cur.x * CELL_SIZE + 1, cur.y * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);
+        }
+    }
+}
+var moveRight = function()
+{
+    var canRight = true;
+    for(var i = 0; i < currentFall.length; i++)
+    {
+        if(currentFall[i].x >= TETRIS_COLS - 1)
+        {
+            canRight = false;
+            break;
+        }
+        if(tetris_status[currentFall[i].y][currentFall[i].x + 1] != NO_BLOCK)
+        {
+            canRight = false;
+            break;
+        }
+    }
+    if(canRight)
+    {
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            tetris_ctx.fillStyle = 'white';
+            tetris_ctx.fillRect(cur.x * CELL_SIZE + 1, cur.y * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);
+        }
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            cur.x++;
+        }
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            tetris_ctx.fillStyle = colors[cur.color];
+            tetris_ctx.fillRect(cur.x * CELL_SIZE + 1, cur.y * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);
+        }
+    }
+}
+var rotate = function()
+{
+    var canRotate = true;
+    for(var i = 0; i < currentFall.length; i++)
+    {
+        var preX = currentFall[i].x;
+        var preY = currentFall[i].y;
+        if(i != 2)
+        {
+            var afterRotateX = currentFall[2].x + preY - currentFall[2].y;
+            var afterRotateY = currentFall[2].y + currentFall[2].x - preX;
+            if(tetris_status[afterRotateY][afterRotateX + 1] != NO_BLOCK)
+            {
+                canRotate = false;
+                break;
+            }
+            if(afterRotateX < 0 || tetris_status[afterRotateY - 1][afterRotateX] != NO_BLOCK)
+            {
+                moveRight();
+                    afterRotateX = currentFall[2].x + preY - currentFall[2].y;
+                    afterRotateY = currentFall[2].y + currentFall[2].x - preX;
+                    break;
+            }
+            if(afterRotateX < 0 ||
+                tetris_status[afterRotateY - 1][afterRotateX] != NO_BLOCK)
+            {
+                moveRight();
+                break;
+            }
+            if(afterRotateX >= TETRIS_COLS - 1 || tetris_status[afterRotateY][afterRotateX + 1] != NO_BLOCK)
+            {
+                moveLeft();
+                afterRotateX = currentFall[2].x + preY - currentFall[2].y;
+                afterRotateY = currentFall[2].y + currentFall[2].x - preX;
+                break;
+            }
+            if(afterRotateX >= TETRIS_COLS - 1 || tetris_status[afterRotateY][afterRotateX + 1] != NO_BLOCK)
+            {
+                moveLeft();
+                break;
+            }
+        }
+    }
+    if(canRotate)
+    {
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            tetris_ctx.fillStyle = 'white';
+            tetris_ctx.fillRect(cur.x * CELL_SIZE + 1, cur.y * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);
+        }
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var preX = currentFall[i].x;
+            var preY = currentFall[i].y;
+            if(i != 2)
+            {
+                currentFall[i].x = currentFall[2].x + preY - currentFall[2].y;
+                currentFall[i].y = currentFall[2].y + currentFall[2].x - preX;
+            }
+        }
+        for(var i = 0; i < currentFall.length; i++)
+        {
+            var cur = currentFall[i];
+            tetris_ctx.fillStyle = colors[cur.color];
+            tetris_ctx.fillStyle = colors[cur.color];
+            tetris_ctx.fillRect(cur.x * CELL_SIZE + 1, cur.y * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);
+        }
+    }
+}
+window.onload = function()
+{
+    createCanvas(TETRIS_ROWS, TETRIS_COLS, CELL_SIZE, CELL_SIZE);
+    document.body.appendChild(tetris_canvas);
+    curScoreEle = document.getElementById("curScoreEle");
+    curSpeedEle = document.getElementById("curSpeedEle");
+    maxScoreEle = document.getElementById("maxScoreEle");
+    var tmpStatus = localStorage.getItem("tetris_status");
+    tetris_status = tmpStatus == null ? tetris_status : JSON.parse(tmpStatus);
+    drawBlock();
+    curScore = localStorage.getItem("curScore");
+    curScore = curScore == null ? 0 : parseInt(curScore);
+    curScoreEle.innerHTML = curScore;
+    maxScore = localStorage.getItem("maxScore");
+    maxScore = maxScore == null ? 0 : parseInt(maxScore);
+    maxScoreEle.innerHTML = maxScore;
+    curSpeed = localStorage.getItem("curSpeed");
+    curSpeed = curSpeed == null ? 1 : parseInt(curSpeed);
+    curSpeedEle.innerHTML = curSpeed;
+    initBlock();
+    curTimer = setInterval("moveDown();", 500 / curSpeed);
 }
