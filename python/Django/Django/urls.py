@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+from books import views
+from contact import views as cviews
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/', include('hello.urls')),
+    url(r'^search-form/$', views.search_form),
+    url(r'^search/$', views.search),
+    url(r'^contact/$', cviews.contact),
+    url(r'^contact/thanks/$', cviews.thanks),
 ]
