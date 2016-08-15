@@ -6,14 +6,14 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse, Http404
 
 
-def hello(request):
-    return HttpResponse("Hello world")
+def hello(request, name):
+    return HttpResponse("Hello world {0}".format(name))
 
-def current_datetime(request):
+def current_datetime(request, urlname):
     now = datetime.datetime.now()
-    return render_to_response('current_datetime.html', {'current_date': now})
+    return render_to_response(urlname, {'current_date': now})
 
-def hours_ahead(request, offset):
+def hours_ahead(request, offset = '0'):
     try:
         hour_offset = int(offset)
     except ValueError:
