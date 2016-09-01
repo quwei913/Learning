@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from books import views
 from contact import views as cviews
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/', include('hello.urls')),

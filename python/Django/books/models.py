@@ -1,5 +1,13 @@
 from django.db import models
 
+class BookManager(models.Manager):
+    def title_count(self, keyword):
+        return self.filter(title__icontains=keyword).count()
+
+class DahlBookManager(models.Manager):
+    def get_query_set(self):
+        return super(DahlBookManager, self).get_query_set().filter(author='Roald Dahl')
+
 # Create your models here.
 class Publisher(models.Model):
     name = models.CharField(max_length=30)
@@ -28,6 +36,9 @@ class Book(models.Model):
     authors = models.ManyToManyField(Author)
     publisher = models.ForeignKey(Publisher)
     publication_date = models.DateField(blank=True, null=True)
+    num_pages = models.IntegerField(blank=True, null=True)
+    objects = models.Manager()
+    dahl_objects = DahlBookManager()
 
     def __unicode__(self):
         return self.title
