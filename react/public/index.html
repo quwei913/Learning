@@ -13,10 +13,6 @@
   <body>
     <div id="content"></div>
     <script type="text/babel">
-    var data = [
-      {id: 1, author: "Pete Hunt", text: "This is one comment"},
-      {id: 2, author: "Jordan Walke", text: "This is *another* comment"}
-    ];
     var CommentList = React.createClass({
       render: function() {
           var commentNodes = this.props.data.map(function(comment) {
