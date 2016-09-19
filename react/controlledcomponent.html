@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>controlledcomponent</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    ReactDOM.render(<input value="hi" readOnly="True"/>, document.getElementById('example'));
+    setTimeout(function() {
+        ReactDOM.render(
+                <input value={""} />,
+                document.getElementById('example')
+        );
+    }, 1000);
+</script>
+</body>
+</html>

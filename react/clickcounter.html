@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>clickcounter</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    var Counter = React.createClass({
+        getInitialState: function() {
+            // naming it initialX clearly indicates that the only purpose
+            // of the passed down prop is to initialize something internally
+            return {count: this.props.initialCount};
+        },
+        handleClick: function() {
+            this.setState({count: this.state.count + 1});
+        },
+        render: function() {
+            return <div onClick={this.handleClick}>{this.state.count}</div>;
+        } });
+    ReactDOM.render(
+            <Counter initialCount={7}/>,
+            document.getElementById('example')
+
+    );
+</script>
+</body>
+</html>
