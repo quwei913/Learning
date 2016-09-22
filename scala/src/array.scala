@@ -39,5 +39,9 @@ object array {
       println(i)
     for (i <- for (j <- input.toArray if j % 2 == 0) yield 2 * j)
       println(i)
+    println(input.sum)
+    println(input.max)
+    println(scala.util.Sorting.quickSort(input.toArray))
+    println(input.mkString(" and "))
   }
 }
