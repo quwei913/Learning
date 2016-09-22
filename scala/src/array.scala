@@ -1,5 +1,8 @@
+package com.scala.demo
 import scala.collection.mutable.ArrayBuffer
-
+import scala.collection.JavaConversions.bufferAsJavaList
+import scala.collection.JavaConversions.asScalaBuffer
+import scala.collection.mutable.Buffer
 /**
   * Created by wqu on 9/21/2016.
   */
@@ -43,5 +46,21 @@ object array {
     println(input.max)
     println(scala.util.Sorting.quickSort(input.toArray))
     println(input.mkString(" and "))
+
+    val matrix = Array.ofDim[Double](3, 4)
+    matrix(1)(2) = 3
+    for (i <- 0 until 3)
+      println(matrix(i).toBuffer)
+    val triangle = new Array[Array[Int]](10)
+    for (i <- 0 until triangle.length)
+      triangle(i) = new Array[Int](i + 1)
+    for (i <- 0 until 10)
+      println(triangle(i).toBuffer)
+
+    val command = ArrayBuffer("ls", "-l")
+    val pb = new ProcessBuilder(command)
+    println(pb)
+    val cmd: Buffer[String] = pb.command()
+    println(cmd)
   }
 }
