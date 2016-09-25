@@ -13,8 +13,8 @@ object DoNothingAction extends UndoableAction("Do nothing") {
   override def redo() {}
 }
 
-class Account private (val id: Int, initialBalance: Double) {
-  private var balance = initialBalance
+class Account (val id: Int, initialBalance: Double) {
+  var balance = initialBalance
   def deposit(amount: Double) {balance += amount}
 }
 
